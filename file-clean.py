@@ -50,4 +50,3 @@ for key, value in word_container:
     f.write(str(key) + '\t' + '|' + '\t' + value + '\n')
 
 f.close()
-
