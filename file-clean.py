@@ -4,6 +4,13 @@ import sys
 
 file = sys.argv[1]
 
+metadata = {}
+metadata['track_no'] = file.split('-')[0]
+metadata['band'] = file.split('-')[1]
+metadata['album'] = file.split('-')[2]
+metadata['track_name'] = file.split('-')[3].split('.')[0]
+
+
 with open(file, 'r') as f:
     lines = f.readlines()
 
