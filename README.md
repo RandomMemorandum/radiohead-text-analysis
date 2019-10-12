@@ -6,4 +6,4 @@ contain scripts that perform data cleaning tasks or summarize basic statistics a
 about parts of the text data or the data as a whole, and preparing simple reports that can be applied 
 to other files.
 
-These scripts may be in Python (.py), R (.r), bash(.bsh), or windows Command Prompt (.bat).
+These scripts may be in Python (.py), R (.r), bash(.sh), or windows Command Prompt (.bat).
