@@ -21,6 +21,7 @@ html_content = response.text
 
 soup = BeautifulSoup(html_content, 'html.parser')
 
+# getting song titles and hyperlinks to each lyric page
 domain = 'https://www.azlyrics.com'
 song_link_list = [['Page','URL']]
 for line in soup.find_all('a'):
@@ -31,6 +32,23 @@ for line in soup.find_all('a'):
     row.append(song_title)
     row.append(domain + url[0])
     song_link_list.append(row)
+
+# gathering album names
+# find div tag where class = album, get name and year
+album_names = [['release_type','title','year']]
+album_lines = soup.find_all(class_='album')
+for line in album_lines:
+
+    row = line.text.split('"')
+
+    if len(row) < 3: continue
+
+    row[0] = row[0].strip().strip(':')
+    row[2] = row[2].strip(' ()')
+    album_names.append(row)
+
+
+
 
 
 
