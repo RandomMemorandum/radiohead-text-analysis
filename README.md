@@ -10,7 +10,9 @@ Currently it uses the python libraries (in alphabetical order):
   * BeauitfulSoup  
   * numpy  
   * pandas  
-  * requests  
+  * requests
+  * sys
+  * time
   * urllib3  
 
 I have chosen to gather lyrics from the band british band Radiohead
@@ -26,8 +28,8 @@ I have chosen to gather lyrics from the band british band Radiohead
     * Write to its own file, following naming convention  
 
   Read file and parse metadata and raw data  
-    * Extract needed information from file name and content of file
-    * Parse information, format, and write to new clean file
+  * Extract needed information from file name and content of file
+  * Parse information, format, and write to new clean file
 
   Read clean files to aggregate into single source, such as a database
 
