@@ -13,9 +13,6 @@ Currently it uses the python libraries (in alphabetical order):
   * requests
   * sys
   * time
-  * urllib3  
-
-I have chosen to gather lyrics from the band british band Radiohead
 
 ### Programming Steps
 
@@ -32,6 +29,3 @@ I have chosen to gather lyrics from the band british band Radiohead
   * Parse information, format, and write to new clean file
 
   Read clean files to aggregate into single source, such as a database
-
-
-
